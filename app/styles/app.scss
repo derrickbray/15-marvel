@@ -18,18 +18,21 @@
 }
 
 .main {
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: row;
   max-width: 100%;
-// display: flex;
-// flex-direction: row;
 
   &__left {
-    width: calc(30% - 2rem);
+    flex-basis: calc(100% / 2 - 2rem);
+    flex-grow: 1;
     margin: 1rem;
     background: green;
 }
 
   &__right {
-    width: calc(65% - 2rem);
+    flex-basis: calc(100% / 2 - 2rem);
+    flex-grow: 1;
     margin: 1rem;
     background: yellow;
 }
