@@ -4,36 +4,26 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'layout';
 
-.nav {
-  width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  background: blue;
-}
-
-.container {
-  max-width: 65rem;
-  margin: 0 auto;
-}
-
-.main {
+.main__characters {
   display: flex;
-  justify-content: space-between;
-  // flex-direction: row;
-  max-width: 100%;
-
-  &__left {
-    flex-basis: calc(100% / 2 - 2rem);
-    flex-grow: 1;
-    margin: 1rem;
-    background: green;
 }
 
-  &__right {
-    flex-basis: calc(100% / 2 - 2rem);
-    flex-grow: 1;
-    margin: 1rem;
-    background: yellow;
+.main__card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  // object-fit: contain;
 }
+
+.main__card-img {
+  & img{
+
+    width: 3rem;
+  }
+}
+
+.main__card .characters-class {
+  flex-basis: calc(100% / 4 - 1rem)
 }
