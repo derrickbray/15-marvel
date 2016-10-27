@@ -1,0 +1,14 @@
+.characters {
+  &__title {
+    border-bottom: 0.1rem solid $c-border;
+  }
+
+  &__card {
+    display: flex;
+
+    &-ind {
+      flex-basis: calc(100% / 4 - 1rem);
+      margin: 1rem;
+    }
+  }
+}

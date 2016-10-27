@@ -5,13 +5,10 @@
 $c-primary: #36169f;
 $c-white: #dedede;
 $c-border: desaturate($c-primary, 5%);
-
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'layout';
 @import 'main';
 @import 'reset';
 @import 'series';
-
-
-// https://static-cdn.jtvnw.net/jtv_user_pictures/capcomfighters-profile_image-77cbcc7e214ec873-300x300.png
+@import 'characters';
