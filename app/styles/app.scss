@@ -2,12 +2,16 @@
 // @import 'normalize-css/normalize';
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-primary: #36169f;
+$c-white: #dedede;
+$c-border: desaturate($c-primary, 5%);
+
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'layout';
 @import 'main';
 @import 'reset';
-
+@import 'series';
 
 
 // https://static-cdn.jtvnw.net/jtv_user_pictures/capcomfighters-profile_image-77cbcc7e214ec873-300x300.png
