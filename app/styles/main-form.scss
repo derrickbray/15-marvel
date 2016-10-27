@@ -1,0 +1,9 @@
+.main__form {
+  display: flex;
+  flex-direction: column;
+  // object-fit: cover;
+
+  &-img {
+    width: 100%;
+  }
+}

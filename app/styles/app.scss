@@ -5,6 +5,8 @@
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'layout';
+@import 'main-form';
+
 
 .main__characters {
   display: flex;
@@ -14,15 +16,17 @@
 .main__card {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  // flex-wrap: wrap;
   flex-grow: 1;
+  width: calc(100% / 4 - 1rem);
+  margin: 1rem;
   // object-fit: contain;
 }
 
 .main__card-img {
   & img {
-
-    width: 3rem;
+    width: 100%;
+    // width: 3rem;
   }
 }
 

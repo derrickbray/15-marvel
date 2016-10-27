@@ -3,6 +3,16 @@
   justify-content: space-between;
   width: 100%;
   background: blue;
+
+  &__title {
+    display: inline;
+    width: 10%;
+  }
+
+  &__box {
+    display: inline;
+    width: 20%;
+  }
 }
 
 .container {
@@ -25,6 +35,8 @@
 }
 
   &__right {
+    display: flex;
+    flex-direction: column;
     width: calc(68% - 3rem);
     // flex-grow: 1;
     margin: 1rem;
