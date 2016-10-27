@@ -1,0 +1,20 @@
+.comics__title {
+  border-bottom: 0.1rem solid $c-border;
+}
+
+.comics__card {
+  margin-top: 1rem;
+
+  &-issue {
+    margin: 0.5rem;
+  }
+  & p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+  }
+
+}
+
+.card-button {
+  }
