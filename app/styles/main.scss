@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+
+  &__left {
+
+  }
+  &__right {
+    flex-grow: 1;
+  }
+}
