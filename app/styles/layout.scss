@@ -1,32 +1,32 @@
 .nav {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  // display: flex;
-  // justify-content: space-between;
   background: blue;
 }
 
 .container {
-  max-width: 65rem;
+  width: 65rem;
   margin: 0 auto;
 }
 
 .main {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   // flex-direction: row;
-  max-width: 100%;
+  // max-width: 100%;
 
   &__left {
-    flex-basis: calc(100% / 2 - 2rem);
-    flex-grow: 1;
+    width: calc(30% - 3rem);
+    // flex-grow: 1;
     margin: 1rem;
     background: green;
 
 }
 
   &__right {
-    flex-basis: calc(100% / 2 - 2rem);
-    flex-grow: 1;
+    width: calc(68% - 3rem);
+    // flex-grow: 1;
     margin: 1rem;
     background: yellow;
 }

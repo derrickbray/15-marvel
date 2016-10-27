@@ -8,22 +8,25 @@
 
 .main__characters {
   display: flex;
+  // flex-grow: 1;
 }
 
 .main__card {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  flex-grow: 1;
   // object-fit: contain;
 }
 
 .main__card-img {
-  & img{
+  & img {
 
     width: 3rem;
   }
 }
 
 .main__card .characters-class {
-  flex-basis: calc(100% / 4 - 1rem)
+  flex-basis: calc(100% / 4 - 1rem);
+  flex-grow: 1;
 }
