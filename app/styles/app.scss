@@ -8,29 +8,6 @@
 @import 'main-form';
 
 
-.main__characters {
-  display: flex;
-  // flex-grow: 1;
-}
 
-.main__card {
-  display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
-  flex-grow: 1;
-  width: calc(100% / 4 - 1rem);
-  margin: 1rem;
-  // object-fit: contain;
-}
 
-.main__card-img {
-  & img {
-    width: 100%;
-    // width: 3rem;
-  }
-}
-
-.main__card .characters-class {
-  flex-basis: calc(100% / 4 - 1rem);
-  flex-grow: 1;
-}
+// https://static-cdn.jtvnw.net/jtv_user_pictures/capcomfighters-profile_image-77cbcc7e214ec873-300x300.png
