@@ -14,41 +14,43 @@
     <div class="nav">
       <div class="container">
         <div class="nav__flex">
-          <div class="nav__title">Marvel</div>
+          <h1>Marvel</h1>
           <div class="nav__search"><input type="text" placeholder="Search" name="name" value=""></div>
         </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <div class="main">
-          <div class="main__left">
+        <div class="grid">
+          <div class="grid__ind grid__ind--left">
             <div class="series">
               <img v-bind:src="seriesData.thumbnail.path + '.' + seriesData.thumbnail.extension" alt="" class="series__img">
               <div class="series__text">
                 <h2 class="series__text-title">{{ seriesData.title }}</h2>
-                <h3 class="series__text-date">{{seriesData.startYear}} - {{seriesData.endYear}}</h3>
-                <h2 class="series__text-creatortitle">creators</h2>
+                <h4 class="series__text-date">{{seriesData.startYear}} - {{seriesData.endYear}}</h4>
+                <h3 class="series__text-creatortitle">creators</h3>
                 <ul class="series__text-list">
                   <li class="series__text-listitem" v-for="creator in seriesData.creators.items">{{ creator.name }}</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="main__right">
+          <div class="grid__ind grid__ind--right">
             <div class="characters">
-              <h2 class="characters__title">characters</h2>
+              <h3>characters</h3>
               <div class="grid">
                 <div class="grid__ind" v-for="character in characters">
-                  <div class="square">
-                    <img v-bind:src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" class="square__pic">
+                  <div class="character">
+                    <div class="square">
+                      <img v-bind:src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" class="square__pic">
+                    </div>
+                    <p class="characters__card-title">{{ character.name }}</p>
                   </div>
-                  <p class="characters__card-title">{{ character.name }}</p>
                 </div>
               </div>
             </div>
             <div class="comics">
-              <h2 class="comics__title">comics</h2>
+              <h3>comics</h3>
               <div class="grid">
                 <div class="grid__ind">
                   <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwCgzBsCmeGHK6hRRxPTzONWTyYaDsGAvrt46ZVMB40iYRyu9J" alt="" class="comics__card-img">

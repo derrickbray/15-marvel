@@ -1,12 +1,6 @@
 .characters {
   min-width: 10rem;
 
-
-  &__title {
-    border-bottom: 0.1rem solid $c-border;
-
-  }
-
   &__card {
     display: flex;
     flex-wrap: wrap;

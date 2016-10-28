@@ -33,5 +33,13 @@
     flex-grow: 1;
 
     margin: 1rem;
+
+    &--left {
+      flex-basis: calc(30% - 1rem - 1rem);
+    }
+
+    &--right {
+      flex-basis: calc(70% - 1rem - 1rem);
+    }
   }
 }

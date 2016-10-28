@@ -13,7 +13,7 @@ const app = new Vue({
   },
 
   mounted() {
-    this.searchSeries('Spider-Man');
+    this.searchSeries('Hulk');
   },
 
   methods: {
