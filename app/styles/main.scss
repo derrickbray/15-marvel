@@ -6,13 +6,17 @@
 
   &__left {
     // margin-right: 0.5rem;
+    min-width: 20rem;
     max-width: 30%;
+    margin: 0 auto;
   }
   &__right {
     flex-grow: 1;
+    min-width: 20rem;
+    max-width: 65%;
+    margin: 0 auto;
     // margin-left: 0.5rem;
     // flex-wrap: wrap;
-    max-width: 65%;
     // background: green;
   }
 }

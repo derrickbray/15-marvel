@@ -10,10 +10,10 @@
   &__card {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 
     &-ind {
       flex-basis: calc(100% / 4 - 2rem);
-      // flex-wrap: wrap;
       min-width: 5rem;
       margin: 1rem;
     }
