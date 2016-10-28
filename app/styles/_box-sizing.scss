@@ -7,8 +7,8 @@ html {
 * {
   box-sizing: inherit;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     box-sizing: inherit;
   }
 }
