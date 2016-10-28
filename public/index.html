@@ -38,17 +38,19 @@
           <div class="main__right">
             <div class="characters">
               <h2 class="characters__title">characters</h2>
-              <div class="characters__card">
-                <div class="characters__card-ind">
-                  <img src="" alt="" class="characters__card-img">
-                  <p class="characters__card-title"></p>
+              <div class="grid">
+                <div class="grid__ind" v-for="character in characters">
+                  <div class="square">
+                    <img v-bind:src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" class="square__pic">
+                  </div>
+                  <p class="characters__card-title">{{ character.name }}</p>
                 </div>
               </div>
             </div>
             <div class="comics">
               <h2 class="comics__title">comics</h2>
-              <div class="comics__card">
-                <div class="comics__card-ind">
+              <div class="grid">
+                <div class="grid__ind">
                   <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwCgzBsCmeGHK6hRRxPTzONWTyYaDsGAvrt46ZVMB40iYRyu9J" alt="" class="comics__card-img">
                   <p class="comics__card-issue">#1</p>
                   <p class="comics__card-title">Spiderman</p>

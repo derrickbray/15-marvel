@@ -8,12 +8,12 @@ const app = new Vue({
 
   data() {
     return { seriesData: null,
-            seriesId: null,
+            characters: null,
     };
   },
 
   mounted() {
-    this.searchSeries('Wolverine');
+    this.searchSeries('Spider-Man');
   },
 
   methods: {
@@ -22,13 +22,16 @@ const app = new Vue({
             .then((r) => r.json())
             .then((data) => {
               this.seriesData = data.data.results[0];
+
+              this.searchCharacters(this.seriesData.id);
             });
     },
+
     searchCharacters(seriesId) {
       fetch(`http://gateway.marvel.com/v1/public/series/${seriesId}/characters?apikey=${apiKey}`)
         .then((r) => r.json())
         .then((data) => {
-          this.seriesId = seriesData.characters.items[0];
+          this.characters = data.data.results;
         });
     },
   },
