@@ -52,11 +52,11 @@
             <div class="comics">
               <h3>comics</h3>
               <div class="grid">
-                <div class="grid__ind">
-                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwCgzBsCmeGHK6hRRxPTzONWTyYaDsGAvrt46ZVMB40iYRyu9J" alt="" class="comics__card-img">
-                  <p class="comics__card-issue">#1</p>
-                  <p class="comics__card-title">Spiderman</p>
-                  <p class="comics__card-date">2016 #1</p>
+                <div class="grid__ind" v-for="comic in comics">
+                  <img src="" alt="" class="comics__card-img">
+                  <p class="comics__card-issue">{{}}</p>
+                  <p class="comics__card-title">{{}}</p>
+                  <p class="comics__card-date">{{}}</p>
                   <button class="card-button">Read More</button>
                 </div>
               </div>
