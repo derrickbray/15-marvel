@@ -10,6 +10,13 @@
 
 <body>
   <div class="full-page">
+    <transition name="fade">
+      <div class="overlay" v-if="infoClick">
+        <div class="overlay__card">
+          <h1>{{ comic.description }}</h1>
+        </div>
+      </div>
+    </transition>
 
     <div class="nav">
       <div class="container">
@@ -53,11 +60,13 @@
               <h3>comics</h3>
               <div class="grid">
                 <div class="grid__ind" v-for="comic in comics">
-                  <img src="" alt="" class="comics__card-img">
-                  <p class="comics__card-issue">{{}}</p>
-                  <p class="comics__card-title">{{}}</p>
-                  <p class="comics__card-date">{{}}</p>
-                  <button class="card-button">Read More</button>
+                  <div class="square">
+                    <img v-bind:src="comic.thumbnail.path + '.' + comic.thumbnail.extension" alt="" class="square__pic">
+                  </div>
+                  <p class="comics__card-issue">{{ comic.issueNumber }}</p>
+                  <p class="comics__card-title">{{ comic.title }}</p>
+                  <p class="comics__card-date"></p>
+                  <button v-onclick="infoCard" class="card-button">Read More</button>
                 </div>
               </div>
             </div>

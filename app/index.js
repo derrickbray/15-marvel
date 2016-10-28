@@ -14,10 +14,15 @@ const app = new Vue({
   },
 
   mounted() {
-    this.searchSeries('Spider-Man');
+    this.searchSeries('Hulk');
   },
 
   methods: {
+
+    // infoCard(click) {
+    //
+    // };
+
     searchSeries(series) {
       fetch(`http://gateway.marvel.com/v1/public/series?limit=1&titleStartsWith=${series}&apikey=${apiKey}`)
             .then((r) => r.json())
@@ -26,7 +31,7 @@ const app = new Vue({
 
               this.searchCharacters(this.seriesData.id);
 
-              this.searchComics();
+              this.searchComics(this.seriesData.id);
             });
     },
 
@@ -37,7 +42,7 @@ const app = new Vue({
           this.characters = data.data.results;
         });
     },
-    searchComics(comicId) {
+    searchComics(series) {
       fetch(`http://gateway.marvel.com/v1/public/series/${series}/comics?apikey=${apiKey}`)
       .then((r) => r.json())
       .then((data) => {
