@@ -6,6 +6,7 @@
   background: $c-primary;
   color: $c-white;
   font-size: 1.5rem;
+  padding: 0 1rem;
 
   &__flex {
     display: flex;
@@ -15,4 +16,8 @@
   &__search {
     // margin-right: 2rem;
   }
+}
+
+.section {
+  padding: 1rem;
 }

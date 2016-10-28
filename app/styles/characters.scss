@@ -4,6 +4,7 @@
 
   &__title {
     border-bottom: 0.1rem solid $c-border;
+
   }
 
   &__card {
@@ -13,11 +14,12 @@
     &-ind {
       flex-basis: calc(100% / 4 - 2rem);
       // flex-wrap: wrap;
-      // min-width: 5rem;
+      min-width: 5rem;
       margin: 1rem;
     }
     &-title {
       // object-fit: contain;
+      // flex-direction: 4rem;
 
     }
   }
