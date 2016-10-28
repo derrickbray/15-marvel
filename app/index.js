@@ -34,5 +34,8 @@ const app = new Vue({
           this.characters = data.data.results;
         });
     },
+    searchComics(comicId) {
+      fetch(`http://gateway.marvel.com/v1/public/series/${series}/comics?apikey=${apiKey}`);
+    },
   },
 });
