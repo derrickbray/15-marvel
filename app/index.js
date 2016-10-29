@@ -14,14 +14,11 @@ const app = new Vue({
   },
 
   mounted() {
-    this.searchSeries('Hulk');
+    this.searchSeries('Wolverine');
   },
 
   methods: {
 
-    // infoCard(click) {
-    //
-    // };
 
     searchSeries(series) {
       fetch(`http://gateway.marvel.com/v1/public/series?limit=1&titleStartsWith=${series}&apikey=${apiKey}`)
