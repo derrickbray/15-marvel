@@ -13,3 +13,44 @@ $c-border: desaturate($c-primary, 5%);
 @import 'series';
 @import 'characters';
 @import 'comics';
+
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  // padding: 2 * $m-gutter;
+  background: rgba(144, 147, 146, .5);
+  z-index: 2;
+
+  &__card {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    // padding: $m-gutter;
+    border-radius: 0.4rem;
+    background: white;
+  }
+
+  &__description {
+    padding-top: 4rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: 0;
+    background: rgba(252, 79, 95, 1.0);
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+  }
+}
