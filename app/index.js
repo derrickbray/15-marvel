@@ -10,15 +10,15 @@
 
    data() {
      return { seriesData: null,
-            characters: null,
-            comics: null,
-            modalDescription: false,
-            searchTerm: '',
-    };
+              characters: null,
+              comics: null,
+              modalDescription: false,
+              searchTerm: '',
+            };
    },
 
    mounted() {
-     this.searchSeries('Spider-Man');
+     this.searchSeries('Wolverine');
    },
 
    methods: {

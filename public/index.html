@@ -60,6 +60,7 @@
                       <img v-bind:src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" class="square__pic">
                     </div>
                     <p class="characters__card-title">{{ character.name }}</p>
+                    <button class="comics__btn" v-on:click="showDescription(character.description)">Read More</button>
                   </div>
                 </div>
               </div>
