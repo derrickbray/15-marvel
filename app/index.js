@@ -1,17 +1,12 @@
  import 'whatwg-fetch';
  import Vue from 'vue/dist/vue';
- // import ComicItem from './components/comic-item';
- // import CharacterItem from './components/character-item';
+
 
  const apiKey = '580e9250da79b2e0d0fc5f62790e6557';
 
  const app = new Vue({
    el: '.full-page',
 
-  //  components: {
-  //    ComicItem,
-  //    CharacterItem,
-  //  },
 
    data() {
      return { seriesData: null,
