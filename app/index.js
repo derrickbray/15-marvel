@@ -1,29 +1,29 @@
  import 'whatwg-fetch';
  import Vue from 'vue/dist/vue';
- import ComicItem from './components/comic-item';
- import CharacterItem from './components/character-item';
+ // import ComicItem from './components/comic-item';
+ // import CharacterItem from './components/character-item';
 
  const apiKey = '580e9250da79b2e0d0fc5f62790e6557';
 
  const app = new Vue({
    el: '.full-page',
 
-   components: {
-     ComicItem,
-     CharacterItem,
-   },
+  //  components: {
+  //    ComicItem,
+  //    CharacterItem,
+  //  },
 
    data() {
      return { seriesData: null,
             characters: null,
             comics: null,
-            modalDescription: false,
-            searchTerm: '',
+            // modalDescription: false,
+            // searchTerm: '',
     };
    },
 
    mounted() {
-     this.searchSeries('Wolverine');
+     this.searchSeries('Spider-Man');
    },
 
    methods: {
@@ -48,6 +48,7 @@
           this.characters = data.data.results;
         });
      },
+
      searchComics(series) {
        fetch(`http://gateway.marvel.com/v1/public/series/${series}/comics?apikey=${apiKey}`)
       .then((r) => r.json())
