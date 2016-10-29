@@ -17,8 +17,8 @@
      return { seriesData: null,
             characters: null,
             comics: null,
-            // modalDescription: false,
-            // searchTerm: '',
+            modalDescription: false,
+            searchTerm: '',
     };
    },
 
@@ -27,6 +27,13 @@
    },
 
    methods: {
+     showDescription(description) {
+       this.modalDescription = description;
+     },
+
+     hideModal() {
+       this.modalDescription = null;
+     },
 
 
      searchSeries(series) {

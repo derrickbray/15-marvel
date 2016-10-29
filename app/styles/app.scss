@@ -1,7 +1,7 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-primary: #36169f;
 $c-white: #dedede;
 $c-border: desaturate($c-primary, 5%);
@@ -37,20 +37,9 @@ $c-border: desaturate($c-primary, 5%);
     background: white;
   }
 
-  &__description {
-    padding-top: 4rem;
-  }
-
-  &__close {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    border: 0;
-    background: rgba(252, 79, 95, 1.0);
-    outline: none;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    color: white;
+  &__btn {
+    float: right;
+    background: $c-primary;
+    color: $c-white;
   }
 }

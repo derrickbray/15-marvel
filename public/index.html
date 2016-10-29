@@ -11,18 +11,30 @@
 <body>
   <div class="full-page">
 
+    <div class="modal" v-if="modalDescription">
+      <div class="modal__card">
+        <button class="modal__btn" v-on:click="hideModal" type="submit"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <p v-html="modalDescription"></p>
+      </div>
+    </div>
+
 
     <div class="nav">
       <div class="container">
         <div class="nav__flex">
           <h1>Marvel</h1>
-          <div class="nav__search"><input type="text" placeholder="Search" name="name" value=""></div>
+          <form class="navbar__search" v-on:submit.prevent="searchSeries(searchTerm)">
+          <input type="text" placeholder="Search" class="navbar__input" v-model="searchTerm">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
         </div>
       </div>
     </div>
+
     <div class="section">
       <div class="container">
         <div class="grid">
+
           <div class="grid__ind grid__ind--left">
             <div class="series">
               <img v-bind:src="seriesData.thumbnail.path + '.' + seriesData.thumbnail.extension" alt="" class="series__img">
@@ -36,7 +48,9 @@
               </div>
             </div>
           </div>
+
           <div class="grid__ind grid__ind--right">
+
             <div class="characters">
               <h3>characters</h3>
               <div class="grid">
@@ -50,6 +64,7 @@
                 </div>
               </div>
             </div>
+
             <div class="comics">
               <h3>comics</h3>
               <div class="grid">
@@ -60,7 +75,7 @@
                   <p class="comics__card-issue">{{ comic.issueNumber }}</p>
                   <p class="comics__card-title">{{ comic.title }}</p>
                   <p class="comics__card-date"></p>
-                  <button v-onclick="infoCard" class="card-button">Read More</button>
+                  <button class="comics__btn" v-on:click="showDescription(comic.description)">Read More</button>
                 </div>
               </div>
             </div>
