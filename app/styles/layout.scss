@@ -16,9 +16,13 @@
   &__input {
     margin-top: 1.5rem;
     padding: 0.2rem;
+    outline: 0;
     font-size: 0.8rem;
     line-height: 1em;
 
+    &:active {
+      outline: 0;
+    }
   }
 }
 
