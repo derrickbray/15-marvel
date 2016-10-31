@@ -6,6 +6,7 @@
   <title>15-Marvel</title>
   <link rel="stylesheet" href="/app.css">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <!---<meta name="viewport" content="width=device width, initial scale=1">-->
 </head>
 
 <body>
@@ -74,7 +75,7 @@
                     <img v-bind:src="comic.thumbnail.path + '.' + comic.thumbnail.extension" alt="" class="square__pic">
                   </div>
                   <p class="comics__card-issue"># {{ comic.issueNumber }}</p>
-                  <p class="comics__card-title">{{ comic.title }}</p>
+                  <p class="comics__card-title">{{ comic.series.name }}</p>
                   <p class="comics__card-date"></p>
                   <button class="comics__btn" v-on:click="showDescription(comic.description)">Read More</button>
                 </div>
