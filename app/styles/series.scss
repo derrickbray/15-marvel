@@ -1,6 +1,10 @@
 .series {
   min-width: 8rem;
 
+  &__img {
+    border-radius: 0.4rem;
+  }
+
   &__text {
     &-title {
       color: $c-primary;

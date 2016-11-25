@@ -18,7 +18,7 @@
    },
 
    mounted() {
-     this.searchSeries('Wolverine');
+     this.searchSeries('Spider-Man');
    },
 
    methods: {
