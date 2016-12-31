@@ -40,7 +40,6 @@
   &__ind {
     flex-basis: calc(100% / 4 - 1rem - 1rem);
     flex-grow: 1;
-
     margin: 1rem;
 
     &--left {
@@ -56,5 +55,21 @@
 @media (max-width: 700px) {
   .grid {
     flex-direction: column;
+  }
+
+  .grid__ind {
+    min-height: 45rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .grid__ind {
+    min-height: 35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid__ind {
+    min-height: 30rem;
   }
 }
