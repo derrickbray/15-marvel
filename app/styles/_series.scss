@@ -6,6 +6,7 @@
   }
 
   &__text {
+
     &-title {
       color: $c-primary;
       font-family: sans-serif;
@@ -25,7 +26,6 @@
 
     &-listitem {
       font-family: sans-serif;
-      // font-weight: lighter;
       font-size: 0.8rem;
     }
   }
